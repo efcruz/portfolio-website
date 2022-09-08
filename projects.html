@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Projects Eduarda Cruz</title>
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="page-header">
+        <!-- Logo -->
+        <!-- <img src="img/eduarda_logo.svg" alt="Personal logo of Eduarda Cruz, a text logo that consists of my name"
+            class="page-header__item"> -->
+        <div>
+            <h1 class="logo-text">Eduarda Cruz</h1>
+        </div>
+
+        <!-- Navbar -->
+        <div>
+            <nav class="main-navigation page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="projects.html" role="menuitem"
+                            class="navigation-list__item navigation-list__item--active">Projects</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Grid -->
+    <section class="page-content">
+        <h1 id="projects">Projects</h1>
+        <div class="grid">
+            <div class="grid__item">
+                <!-- Pokedex -->
+                <img src="img/screenshot_pokedex-app.png" class="project-cover">
+                <div class="project-description">
+                    <h3>Pokedéx</h3>
+                    <p>
+                        This is my first JavaScript project.
+                        It is a Pokédex app that retrieves information from an external API. Display Pokémon details
+                        upon clicking on the Pokémon’s name.
+                        <br>
+                        #HTML #CSS #JavaScript #jQuery
+                    </p>
+                    <a href="https://efcruz.github.io/simple-js-app/" target="_blank">See live project</a>
+                    <br>
+                    <a href="https://efcruz.github.io/simple-js-app/" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+            <!-- myFlixAPI -->
+            <div class="grid__item">
+                <img src="img/screenshot_api.png" class="project-cover">
+                <div class="project-description">
+                    <h3>myFlix API</h3>
+                    <p>
+                        RESTful API that allows users to access to information on movies such as
+                        directors and
+                        genre specifications. The user can sign up, update personal information and save/delete favorite
+                        movies to/from his personal profile.
+                        <br>
+                        #MongoDB #Express #React #Node
+                    </p>
+                    <a href="https://github.com/efcruz/myFlix" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+            <!-- myFlix (react) -->
+            <div class="grid__item">
+                <img src="img/screenshot-myflix-client.png" class="project-cover">
+                <div class="project-description">
+                    <h3>myFlix (React)</h3>
+                    <p>
+                        Client-side app built in React for the myFlix API. Include several interface views built using
+                        React’s library that handle data through the previously defined REST API endpoints.
+                        <br>
+                        #React #Redux #Bootstrap
+                    </p>
+                    <a href="https://efcruz.github.io/meet-app" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+            <!-- MeetApp -->
+            <div class="grid__item">
+                <img src="img/Screenshot_meet-app.png" class="project-cover">
+                <div class="project-description">
+                    <h3>MeetApp</h3>
+                    <p>
+                        Progressive web application (PWA) with React using a test-driven development (TDD) technique.
+                        The application uses the Google Calendar API to fetch upcoming events.
+                        <br>
+                        #React #AWS #TDD #Jest #CI
+                    </p>
+                    <a href="https://efcruz.github.io/meet-app" target="_blank">See live project</a>
+                    <br>
+                    <a href="https://github.com/efcruz/meet-app" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+            <!-- ChatApp -->
+            <div class="grid__item">
+                <img src="img/screenshot-chat-app.png" class="project-cover">
+                <div class="project-description">
+                    <h3>ChatApp</h3>
+                    <p>
+                        A chat app for mobile devices using React Native. The app provides to users a chat interface and
+                        options to share images, pictures and their location.
+                        <br>
+                        #React-Native #Expo #Google-Firebase #Gifted-Chat
+                    </p>
+                    <a href="https://github.com/efcruz/chat-app" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+            <!-- MyFlix-Angular -->
+            <div class="grid__item">
+                <img src="img/screenshot_myflix-angular.png" class="project-cover">
+                <div class="project-description">
+                    <h3>myFlix (Angular)</h3>
+                    <p>
+                        Client-side app built in Angular for the myFlix API. Include several interface views built using
+                        Angular Material that handles data through the previously defined REST API endpoints.
+                        <br>
+                        #Angular #TypeScript #JSDoc
+                    </p>
+                    <a href="https://efcruz.github.io/myFlix-Angular-client/" target="_blank">See live project</a>
+                    <br>
+                    <a href="https://github.com/efcruz/myFlix-Angular-client" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer">
+        <p id="find-me">Find me on</p>
+        <div class="social-media">
+            <!-- LinkedIn logo -->
+            <a href="https://www.linkedin.com/in/efpaulo/" target="_blank">
+                <img id="linkedin-icon" src="img/linkedin_icon.svg" alt="Linkedin"></a>
+            <!-- Github logo -->
+            <a href="https://github.com/effpaulo/" target="_blank"> <img id="github-icon" src="img/github_icon.svg"
+                    alt="Github"></a>
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

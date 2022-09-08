@@ -1,32 +1,21 @@
-/*
-Colors used
-
-Text Color (Dark Gray): #2b2b2b;
-Primary Color (Green): #357b70
-Secondary Color (Yellow):#e0b354
-Backgroud Color (Light grey): #d3d3d3;
-
-Font Size 1: 30px
-Font Size 2: 24px
-Font Size 3: 18px
-Font Size 4: 16px
-Font Weight 400/700
- */
-
  :root {
-  --primary-color: #357b70;
-  --secondary-color: #e0b354;
-  --text-primary-color: #2b2b2b;
+  --primary-color: #e0b354;
+  --secondary-color: rgb(25, 99, 80);
   --text-secondary-color: white;
-  --background-primary-color: lightgray;
-  --primary-font-family: 'Lato', sans-serif;
+  --background-primary-color: rgb(0, 0, 0);
+  --background-secondary-color: rgb(0, 0, 0);
+  --font-family-text: 'Anek Gurmukhi', sans-serif;
+  --font-family-logo: 'Krona One', sans-serif;
+  --font-family-title: 'Anek Gurmukhi', sans-serif;
   --font-size-1: 30px;
   --font-size-2: 24px;
   --font-size-3: 18px;
-  --font-size-4: 16px;
+  --font-size-4: 15px;
+  --font-size-5: 12px;
   --font-weight-1: 700;
   --font-weight-2: 400;
   --line-height-1: 1.6;
+
 }
 
  * {
@@ -35,27 +24,76 @@ Font Weight 400/700
 }
 
  body {
-    font-family: var(--primary-font-family);
+    font-family: var(--font-family-text);
     font-weight: var(--font-weight-2);
-    font-size: var(--font-size-4);
+    font-size: var(--font-size-3);
     line-height: var(--line-height-1);
-    color: var(--text-primary-color);
+    color: var(--text-secondary-color);
+    background-color: var(--background-primary-color);
+    /*background: linear-gradient(243deg, rgba(228,1,177,1) 0%, rgba(0,34,116,1) 47%, rgba(137,0,255,1) 100%);*/
+    padding-bottom: 2rem;
+    
   }
 
   header {
-    font-family: var(--primary-font-family);
-    font-weight: var(--font-weight-2);
     font-size: var(--font-size-3);
     line-height: var(--line-height-1);
+    font-family: var(--font-family-title);
     color: var(--primary-color);
+    padding: 2rem;
+    display: flex;
+    flex: 0 1 100%;
+    width: 100%;
+   
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
+  /*
+  .page-content {
+    justify-content: space-between;
+  }
+  */
+
   footer {
-    font-family: var(--primary-font-family);
+    font-family: var(--font-family-primary);
     font-weight: var(--font-weight-2);
     font-size: var(--font-size-3);
     line-height: var(--line-height-1);
     color: var(--text-primary-color);
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+    margin-top: 2rem;
+    
+    bottom: 2rem;
+   
+    margin: 0 auto;
+    
+    width: 100%;
+  }
+
+  #find-me {
+    font-size: var(--font-size-4);
+  }
+
+  #github-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  #linkedin-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-text {
+    font-family: var(--font-family-logo);
+    font-size: 48px;
+    color: var(--text-secondary-color);
+    margin: 0;
   }
   
   h1 {
@@ -73,18 +111,73 @@ Font Weight 400/700
     font-weight: var(--font-weight-1);
   }
 
-  .skills{
-    color: var(--secondary-color);
-  }
+  
+/* Header */
 
-  #text-bio {
-    font-weight: var(--font-weight-1);
-    font-size: var(--font-size-3);
-  }
+/* Footer */
 
-  #work {
-    text-align: center;
-  }
+/* Profile  */
+
+.profile {
+
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 15rem;
+  
+}
+
+.profile-portrait-box {
+  align-content: center;
+ 
+  margin-left: 5rem;
+}
+
+.profile__portrait {
+  
+  width: 250px;
+  height: auto;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+
+.bio-box {
+
+margin-left: 5rem;
+width: 40rem;
+text-align: justify;
+/*background-color: var(--primary-color);*/
+color: white;
+padding-top: 1rem;
+} 
+
+#bio {
+  font-weight: var(--font-weight-1);
+  font-size: var(--font-size-4);
+  margin-top: 0rem;
+  
+  
+}
+
+#hello {
+  margin-top: 0rem;
+  
+}
+
+#projects {
+  padding-left: 2rem;
+}
+
+.skills{
+  color: var(--secondary-color);
+}
+
+ 
+
+#work {
+  text-align: center;
+}
 
   span {
       color: var(--secondary-color);
@@ -92,6 +185,7 @@ Font Weight 400/700
 
   a {
     color: var(--primary-color);
+    text-decoration: none;
   }
 
   a:visited {
@@ -141,22 +235,7 @@ Font Weight 400/700
     text-decoration: none;
   }
 
-  .page-footer {
-    /* stop being floated */
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .page-header {
-    display: flex;
-    flex: 0 1 100%;
-    width: 100%;
-    padding: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 
   .page-header__item {
     flex-wrap: nowrap;
@@ -181,24 +260,42 @@ Font Weight 400/700
     margin-left: 15px;
   }
 
-  .profile {
-    max-width: 700px;
-    margin: 0 auto;
+  .project-cover {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
   }
 
-  .profile__portrait {
-    float: left;
-    width: 250px;
-    height: auto;
-    margin: 5px 5px;
-    border-radius: 50%;
+  .project-description {
+    margin: 1rem;
+    font-size: var(--font-size-5);
   }
+
+  #about {
+  text-align: center;
+  }
+
+  .about-box {
+    width: 25rem;
+    margin: 0 auto;
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-2);
+    
+  }
+
+  .about-text {
+    text-align: justify;
+   
+  }
+
+ 
 
   /* start grid fallback */
   .grid__item {
   display: inline-block;
   width: 33%;
-  background-color: var(--background-primary-color);
+  
+  
   }
   /* end grid fallback */
 
@@ -206,22 +303,23 @@ Font Weight 400/700
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 0rem;
     margin: 0px;
+    margin-bottom: 5rem;
   }
 
   .grid__item {
-    background-color: var(--background-primary-color);
-    padding: 20px;
+    color: var(--text-primary-color);
+    /*border: 5px solid rgb(37, 209, 66);*/
     width: auto;
     min-height: auto;
     margin: 0;
   }
 
-  .grid__item:last-child {
+  /*.grid__item:last-child {
     grid-column: 3 / 3;
     grid-row: 1 / 3;
-  }
+  }*/
  }
 
 @media all and (max-width: 500px) {
@@ -276,9 +374,9 @@ Font Weight 400/700
   }
 }
 
-@media all and (max-width: 750px){
+@media all and (min-width: 1500px){
   .grid {
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   .grid__item:last-child {
     grid-column: auto / auto;
@@ -289,11 +387,7 @@ Font Weight 400/700
   }
 }
 
-.about {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
+
 
 .contact {
   max-width: 900px;
