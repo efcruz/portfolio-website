@@ -1,6 +1,6 @@
  :root {
   --color-1: #ffe6d5;
-  --color-2: #005500;
+  --color-2: #066906;
   --color-3: black;
   --color-4: white;
   --color-5: lightgray;
@@ -26,15 +26,33 @@
 body {
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-2);
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-4);
   line-height: var(--line-height-1);
   color: var(--color-3);
   padding-top: 4rem;
+}
 
-  
+h1 {
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-1);
+  color: var(--color-5);
+}
+
+h2 {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-1);
+}
+
+h3 {
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-1);
 }
 
 /* navbar */
+
+.bg-light {
+  background-color: var(--color-4) !important;
+}
 
 .navbar.navbar-nav {
   text-align: center;
@@ -43,6 +61,8 @@ body {
 .navbar-light .navbar-nav .nav-link {
   color: var(--color-2);
 }
+
+
 
   
 
@@ -78,24 +98,6 @@ footer {
     width: 50px;
     height: 50px;
   }
-
-  
-  h1 {
-    font-size: var(--font-size-1);
-    font-weight: var(--font-weight-1);
-  }
-  
-  h2 {
-    font-size: var(--font-size-2);
-    font-weight: var(--font-weight-1);
-  }
-  
-  h3 {
-    font-size: var(--font-size-3);
-    font-weight: var(--font-weight-1);
-  }
-
-  
 
 /* Profile  */
 
@@ -133,11 +135,31 @@ footer {
 #hello {
   font-weight: var(--font-weight-1);
   font-size: var(--font-size-2);
-  
 }
 
 #projects {
-  padding-left: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* card */
+
+.card {
+  border: none;
+}
+
+.card-body {
+  text-align: justify;
+  padding-right: 0rem;
+  padding-left: 0rem;
+}
+.card-link {
+  color:var(--color-2);
+}
+
+.hashtags {
+  color: var(--color-5);
 }
 
 .skills{
