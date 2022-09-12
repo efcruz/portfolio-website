@@ -151,6 +151,7 @@ footer {
 
 .card-body {
   text-align: justify;
+  
   padding-right: 0rem;
   padding-left: 0rem;
 }
@@ -160,6 +161,7 @@ footer {
 
 .hashtags {
   color: var(--color-5);
+  margin-bottom: 1rem;
 }
 
 .skills{
@@ -332,13 +334,17 @@ footer {
 @media all and (min-width: 576px) and (max-width: 750px){
 
   .bio-box {
-    text-align: justify;
+    text-align: left;
     display: flex;
     flex-direction: column-reverse;
   }
 
   .bio {
     text-align: center;
+  }
+
+  .card {
+    margin-bottom: 2rem;
   }
 
 }
