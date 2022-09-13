@@ -48,7 +48,30 @@ h3 {
   font-weight: var(--font-weight-1);
 }
 
+a:link {
+  color:var(--color-2) !important;
+}
+
+a:visited {
+  color: var(--color-2) !important;
+}
+
+a:hover {
+  color: var(--color-2) !important;
+}
+
+a:active {
+  color:var(--color-3) !important;
+}
+
 /* navbar */
+
+.nav-link {
+  display: block;
+  position: relative;
+  top: 0.5rem;
+  
+}
 
 .bg-light {
   background-color: var(--color-4) !important;
@@ -141,22 +164,27 @@ footer {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  scroll-margin-top: 3.5rem;
 }
 
 /* card */
 
+
 .card {
   border: none;
+  margin-bottom: 2rem;
 }
 
 .card-body {
   text-align: justify;
-  
   padding-right: 0rem;
   padding-left: 0rem;
 }
+
 .card-link {
   color:var(--color-2);
+  position: absolute;
+  bottom: 10px;
 }
 
 .hashtags {
@@ -164,9 +192,46 @@ footer {
   margin-bottom: 1rem;
 }
 
-.skills{
-  color: var(--secondary-color);
+/* About  */
+
+#about {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  scroll-margin-top: 3.5rem;
 }
+
+.about {
+  width: 100%;
+  padding: 5rem;
+  background-color: var(--color-1);
+}
+
+.about-text-box {
+  text-align: left;
+}
+
+.about-text {
+  text-align: justify;
+}
+
+
+.contact-box {
+  display: flex;
+  flex-direction: column-reverse;
+} 
+
+.contact {
+  font-weight: var(--font-weight-1);
+  font-size: var(--font-size-4);
+}
+
+
+#skills{
+  list-style-type: none;
+  text-align: left;
+}
+
 
  
 
@@ -176,16 +241,6 @@ footer {
 
   span {
       color: var(--secondary-color);
-  }
-
-  a {
-    color: var(--primary-color);
-    text-decoration: none;
-  }
-
-  a:visited {
-    /* visited link */
-    color: var(--primary-color);
   }
 
   .button:visited {
@@ -264,23 +319,6 @@ footer {
   .project-description {
     margin: 1rem;
     font-size: var(--font-size-5);
-  }
-
-  #about {
-  text-align: center;
-  }
-
-  .about-box {
-    width: 25rem;
-    margin: 0 auto;
-    font-size: var(--font-size-4);
-    font-weight: var(--font-weight-2);
-    
-  }
-
-  .about-text {
-    text-align: justify;
-   
   }
 
   /* Footer  */
