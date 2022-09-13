@@ -23,6 +23,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-2);
@@ -85,10 +90,6 @@ a:active {
   color: var(--color-2);
 }
 
-
-
-  
-
 footer {
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-2);
@@ -108,20 +109,7 @@ footer {
   width: 100%;
 }
 
-  #find-me {
-    font-size: var(--font-size-4);
-  }
-
-  #github-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  #linkedin-icon {
-    width: 50px;
-    height: 50px;
-  }
-
+  
 /* Profile  */
 
 .profile {
@@ -167,7 +155,7 @@ footer {
   scroll-margin-top: 3.5rem;
 }
 
-/* card */
+/* Projects cards */
 
 
 .card {
@@ -191,6 +179,12 @@ footer {
   color: var(--color-5);
   margin-bottom: 1rem;
 }
+
+.open-link-icon {
+  width: 20px;
+  height: 20px;
+}
+
 
 /* About  */
 
@@ -232,6 +226,22 @@ footer {
   text-align: left;
 }
 
+
+/* Contact */
+
+#find-me {
+  font-size: var(--font-size-4);
+}
+
+#github-icon {
+  width: 45px;
+  height: 45px;
+}
+
+#linkedin-icon {
+  width: 50px;
+  height: 50px;
+}
 
  
 
