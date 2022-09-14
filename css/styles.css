@@ -74,7 +74,6 @@ a:active {
   display: block;
   position: relative;
   top: 0.5rem;
-  
 }
 
 .bg-light {
@@ -88,26 +87,6 @@ a:active {
 .navbar-light .navbar-nav .nav-link {
   color: var(--color-2);
 }
-
-footer {
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-3);
-  line-height: var(--line-height-1);
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  
-  margin-top: 2rem;
-  
-  bottom: 2rem;
-  
-  margin: 0 auto;
-  
-  width: 100%;
-}
-
   
 /* Profile  */
 
@@ -116,11 +95,11 @@ footer {
   padding-bottom: 5rem;
   padding-top: 10rem;
   background-color: var(--color-1);
-  
 }
 
 .profile-portrait-box {
   text-align: right;
+  
 }
 
 .profile__portrait {
@@ -128,12 +107,8 @@ footer {
   height: auto;
 }
 
-
 .bio-box {
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  padding-right: 3rem;
+  padding-right: 10rem;
   margin-bottom: 0rem;
   
 } 
@@ -143,15 +118,15 @@ footer {
   font-size: var(--font-size-4);
   position: absolute;
   bottom: 0rem;
-  
+
 }
 
 #hello {
   font-weight: var(--font-weight-1);
   font-size: var(--font-size-2);
   color: var(--color-3);
-  position: absolute;
-  bottom: 5rem;
+
+
 }
 
 #projects {
@@ -223,7 +198,6 @@ span {
   text-align: justify;
 }
 
-
 .contact-box {
   display: flex;
   flex-direction: column-reverse;
@@ -235,12 +209,10 @@ span {
   text-align: center;
 }
 
-
 #skills{
   list-style-type: none;
   text-align: left;
 }
-
 
 /* Contact */
 
@@ -256,49 +228,46 @@ span {
 #linkedin-icon {
   width: 50px;
   height: 50px;
-}
-
-@media all and (max-width: 575px) {
-
-  .profile-portrait-box {
-    text-align: center;
-    
-  }
-
-  .bio-box {
-    text-align: center;
-    margin-top: 1rem;
-    padding-right: 0rem;
-  } 
-
-  .bio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .button {
-    display: block;
-    width: 200px;
-    text-align: center;
-    margin: auto;
-  }
+  text-align: center;
 }
 
 /* Footer */
 
 .page-footer {
-  color:var(--color-5);
-  font-size: var(--font-size-5);
   margin: 1rem;
+  font-size: var(--font-size-5);
+  color: var(--color-5);
 }
 
-@media all and (min-width: 576px) and (max-width: 750px){
+@media all and (max-width: 575px) {
+
+  .profile {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .profile-portrait-box {
+    text-align: center;
+  }
 
   .bio-box {
-    text-align: left;
-    display: flex;
-    flex-direction: column-reverse;
+    text-align: center;
+    padding-right: 0rem;
+    margin: 0;
+  } 
+
+  #bio {
+    position: relative;
+    padding-top: 3rem;
+    margin: 0 auto;
   }
+
+  #skills{
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 767px){
 
   .bio {
     text-align: center;
@@ -308,10 +277,16 @@ span {
     margin-bottom: 2rem;
   }
 
+  #skills{
+    text-align: center;
+  }
+
 }
 
 @media all and (min-width: 1500px){
+  /*
   h1 {
     font-size: 22px;
   }
+  */
 }
