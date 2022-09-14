@@ -216,8 +216,14 @@ span {
 
 /* Contact */
 
+.contact-box {
+  margin-top: 4rem;
+  text-align: center;
+}
+
 #find-me {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-5);
+  text-align: center;
 }
 
 #github-icon {
@@ -237,6 +243,7 @@ span {
   margin: 1rem;
   font-size: var(--font-size-5);
   color: var(--color-5);
+  text-align: center;
 }
 
 @media all and (max-width: 575px) {
