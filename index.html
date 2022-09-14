@@ -18,10 +18,6 @@
 </head>
 
 <body>
-
-    <!-- Logo -->
-
-
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand navbar-light bg-light fixed-top container">
@@ -41,28 +37,7 @@
 
     </nav>
 
-    <!--
-        <div>
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="projects.html" role="menuitem"
-                            class="navigation-list__item navigation-list__item--active">Projects</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        -->
-
-
     <!-- Profile -->
-
     <div class="container profile">
         <div class="row">
             <div class="col-sm profile-portrait-box">
@@ -70,11 +45,12 @@
             </div>
 
             <div class="col-sm bio-box">
-
+                <h1 id="hello">Hi, I'm Eduarda Cruz</h1>
                 <p id="bio">
-                    <span id="hello">Hello!</span><br>I am Eduarda, I am a Full Stack Web Developer from Berlin.
+                    Full Stack Web Developer from
+                    Berlin.
                     <br>
-                    I am driven by problem solving, with a background in architecture.
+                    Driven by problem solving, with a background in architecture.
                 </p>
             </div>
         </div>
@@ -99,7 +75,7 @@
                         on the Pokémon’s name.
                     </p>
 
-                    <a class="card-link" href="https://github.com/efcruz/simple-js-app" target="_blank">GitHub
+                    <a href="https://github.com/efcruz/simple-js-app" class="card-link" target="_blank">GitHub
                         Repository</a>
                 </div>
             </div>
@@ -109,12 +85,17 @@
                 <img class="card-img-top" src="img/screenshot_api.png" alt="Card image cap">
                 <div class="card-body">
                     <h2 class="card-title">myFlix API</h2>
-                    <p class="card-text">RESTful API that allows users to access to information on movies such as
-                        directors and
-                        genre specifications. The user can sign up, update personal information and save/delete favorite
-                        movies to/from his personal profile.</p>
-                    <p class="hashtags">#MongoDB #Mongoose #Express #Node</p>
-                    <a href="https://github.com/efcruz/myFlix" class="card-link">GitHub Repository</a>
+                    <p class="card-text">Server-side for a web application that gives users access to movie
+                        information, such as title, genre, director, etc. The user can sign up, update personal
+                        information and add or remove favorite movies.
+                        It was built with <span>JavaScript</span> running on <span>Node.js</span> with
+                        <span>Express</span> and includes my own <span>RESTful API</span>
+                        database in <span>MongoDB</span>, supported by <span>Mongoose</span> for business logic. User
+                        authentication was built
+                        with <span>Passport</span>. It is deployed in <span>Heroku</span>.
+                    </p>
+
+                    <a href="https://github.com/efcruz/myFlix" class="card-link" target="_blank">GitHub Repository</a>
                 </div>
             </div>
 
@@ -123,11 +104,17 @@
                 <img class="card-img-top" src="img/screenshot-myflix-client.png" alt="Card image cap">
                 <div class="card-body">
                     <h2 class="card-title">myFlix (React)</h2>
-                    <p class="card-text">Client-side app built in React for the myFlix API. Include several interface
-                        views built using
-                        React’s library that handle data through the previously defined REST API endpoints.</p>
-                    <p class="hashtags">#React #Redux #Bootstrap</p>
-                    <a href="https://github.com/efcruz/myFlix-client" class="card-link">GitHub Repository</a>
+                    <p class="card-text">Single page application (SPA) that handles data through an API built by me in
+                        another project named “myFlix API”. It gives access to movie information, such as
+                        title, genre, director, etc. The user can sign up, update personal information and add or remove
+                        favorite movies.
+                        It was made with <span>JavaScript</span> on <span>React</span> with <span>Redux</span> for state
+                        handling. UI designed with <span>Bootstrap</span>
+                        and building with <span>Parcel</span>.
+
+                    </p>
+                    <a href="https://github.com/efcruz/myFlix-client" class="card-link" target="_blank">GitHub
+                        Repository</a>
                 </div>
             </div>
         </div>
@@ -139,11 +126,15 @@
                     <img class="card-img-top" src="img/screenshot_meet-app.png" alt="Card image cap"></a>
                 <div class="card-body">
                     <h2 class="card-title">Meet App</h2>
-                    <p class="card-text">Progressive web application (PWA) with React using a test-driven development
-                        (TDD) technique.
-                        The application uses the Google Calendar API to fetch upcoming events.</p>
-                    <p class="hashtags">#React #AWS #TDD #Jest #CI</p>
-                    <a href="https://github.com/efcruz/meet-app" class="card-link">GitHub Repository</a>
+                    <p class="card-text">Progressive web application <span>(PWA)</span> that allows users to search for
+                        a city and
+                        get a list of events hosted in that city.
+                        The events are fetched using Google Calendar API using <span>AWS Lambda</span> as authorisation
+                        server for
+                        issuing <span>OAuth2</span> authentication. It was built on <span>React</span> through
+                        test-driven development <span>(TDD)</span>
+                        handled by <span>Jest</span>.</p>
+                    <a href="https://github.com/efcruz/meet-app" class="card-link" target="_blank">GitHub Repository</a>
                 </div>
             </div>
 
@@ -152,11 +143,14 @@
                 <img class="card-img-top" src="img/screenshot-chat-app.png" alt="Card image cap">
                 <div class="card-body">
                     <h2 class="card-title">Chat App</h2>
-                    <p class="card-text">A chat app for mobile devices using React Native. The app provides to users a
-                        chat interface and
-                        options to share images, pictures and their location.</p>
-                    <p class="hashtags">#React-Native #Expo #Google-Firebase #Gifted-Chat</p>
-                    <a href="https://github.com/efcruz/chat-app" class="card-link">GitHub Repository</a>
+                    <p class="card-text">Chat mobile application for messages exchanging between users with with offline
+                        functionality and
+                        options to share images and their location. It was built in <span>React Native</span>, developed
+                        using <span>Expo</span> and uses
+                        the
+                        services of <span>Google Firestore</span> for storing and retrieving data and for
+                        authentication. </p>
+                    <a href="https://github.com/efcruz/chat-app" class="card-link" target="_blank">GitHub Repository</a>
                 </div>
             </div>
 
@@ -166,11 +160,17 @@
                     <img class="card-img-top" src="img/screenshot_myflix-angular.png" alt="Card image cap"></a>
                 <div class="card-body">
                     <h2 class="card-title">myFlix (Angular)</h2>
-                    <p class="card-text">Client-side app built in Angular for the myFlix API. Include several interface
-                        views built using
-                        Angular Material that handles data through the previously defined REST API endpoints.</p>
-                    <p class="hashtags">#Angular #TypeScript #JSDoc</p>
-                    <a href="https://github.com/efcruz/myFlix-Angular-client" class="card-link">GitHub Repository</a>
+                    <p class="card-text">Client-side app built in <span>Angular</span> that handles data through an API
+                        built by me
+                        in
+                        another project named “myFlix API”. It gives access to movie information, such as
+                        title, genre, director, etc. The user can sign up, update personal information and add or remove
+                        favorite movies. It was built with <span>TypeScript</span> and its UI with <span>Angular
+                            Material</span>. The code was
+                        commented on and exported through <span>TypeDoc</span> document generator. </p>
+
+                    <a href="https://github.com/efcruz/myFlix-Angular-client" class="card-link" target="_blank">GitHub
+                        Repository</a>
                 </div>
             </div>
         </div>
@@ -205,7 +205,6 @@
                     <li class="skills">React Native</li>
                     <li class="skills">Angular</li>
                 </ul>
-
                 <br>
                 It excites me to work in collaborative, organised and friendly teams focused on building great
                 products.
@@ -228,12 +227,10 @@
         </div>
     </div>
 
-
-
-
     <footer class="page-footer">
+        <p>Wesite built and designed by Eduarda Cruz</p>
     </footer>
-    <script src="js/tota11y.min.js"></script>
+    <!--<script src="js/tota11y.min.js"></script>-->
 </body>
 
 </html>
