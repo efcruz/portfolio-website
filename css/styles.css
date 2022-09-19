@@ -161,13 +161,13 @@ span {
 .card-link {
   color:var(--color-2);
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 0rem;
 }
 
 .card-link-demo {
   color:var(--color-2);
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 0rem;
   right: 10rem;
   
 }
