@@ -167,21 +167,21 @@ span {
   color:var(--color-2);
   position: absolute;
   bottom: 0rem;
-  right: 9rem;
+  right: 10.8rem;
 }
 
 .card-link-demo-temp { /* Untill all case studies been finished */
   color:var(--color-2);
   position: absolute;
   bottom: 0rem;
-  right: 10rem;
+  right: 11.5rem;
 }
 
 .card-link-case-study {
   color:var(--color-2);
   position: absolute;
   bottom: 0rem;
-  right: 3rem;
+  right: 5.5rem;
 }
 
 .hashtags {
@@ -192,6 +192,10 @@ span {
 .open-link-icon {
   width: 20px;
   height: 20px;
+}
+
+#all-projects {
+  text-align: center;
 }
 
 
