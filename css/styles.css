@@ -10,7 +10,7 @@
   --font-size-1: 30px;
   --font-size-2: 24px;
   --font-size-3: 20px;
-  --font-size-4: 15px;
+  --font-size-4: 16px;
   --font-size-5: 12px;
   --font-weight-1: 700;
   --font-weight-2: 400;
@@ -110,7 +110,6 @@ a:active {
 .bio-box {
   padding-right: 10rem;
   margin-bottom: 0rem;
-  
 } 
 
 #bio {
@@ -161,7 +160,28 @@ span {
 .card-link {
   color:var(--color-2);
   position: absolute;
-  bottom: 10px;
+  bottom: 0rem;
+}
+
+.card-link-demo {
+  color:var(--color-2);
+  position: absolute;
+  bottom: 0rem;
+  right: 9rem;
+}
+
+.card-link-demo-temp { /* Untill all case studies been finished */
+  color:var(--color-2);
+  position: absolute;
+  bottom: 0rem;
+  right: 10rem;
+}
+
+.card-link-case-study {
+  color:var(--color-2);
+  position: absolute;
+  bottom: 0rem;
+  right: 3rem;
 }
 
 .hashtags {
@@ -245,6 +265,40 @@ span {
   color: var(--color-5);
   text-align: center;
 }
+
+/* Case Studies */
+
+/* Beginning */
+
+.beginning {
+  width: 100%;
+  background-color: blue;
+  
+}
+
+.overview-box {
+  width: 50%;
+  height: 19rem;
+  background-color: var(--color-1);
+  padding: 1rem;
+}
+
+.homepage-screenshot-box {
+  background-color: blueviolet;
+  align-content: right;
+  padding: 0rem;
+}
+
+.homepage-screenshot {
+  float:right;
+  height: 19rem;
+  width: auto;
+} 
+
+
+
+
+
 
 @media all and (max-width: 575px) {
 
