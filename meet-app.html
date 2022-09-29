@@ -48,7 +48,7 @@
                     test-driven development (TDD) supported by Jest.
                     <br>
                     <br>
-                    <span id="context">Context</span>
+                    <span class="subtitle">Context</span>
                     <br>
 
 
@@ -56,7 +56,7 @@
                     skills.
                     <br>
                     <br>
-                    <span id="duration">Duration</span>
+                    <span class="subtitle">Duration</span>
 
                     <br>
 
@@ -73,59 +73,71 @@
         </div>
     </div>
 
-
-
-
-
-    <!-- About -->
-    <h1 id="about">About</h1>
-    <div class="container about">
-        <div class="row">
-            <div class="col-sm-12 about-text-box">
-                <p class="about-text"> I used to be an Architect, but decided to invest my mathematical thinking and
-                    problem-solving skills in
-                    programming, so I became a Web Developer. Not only can I take advantage of my skills, but also the
-                    sense
-                    of community and mutual help in this field fulfils me.
-                    As a former Architect, I am used to working with interdisciplinary teams, I am well acquainted with
-                    the
-                    design process and I am used to communicating graphically. It excites me to work in collaborative,
-                    organised and friendly teams focused on building great
-                    products.
-                    <br>
-                    During 8 months in Career Foundry bootcamp, I had the opportunity to develop a few projects at my
-                    own
-                    pace, which gave me a good foundation in the most on-demand technologies, such as:
-                </p>
-                <br>
-                <ul id="skills">
-                    <li class="skills">HTML</li>
-                    <li class="skills">JavaScript (ES6)</li>
-                    <li class="skills">CSS</li>
-                    <li class="skills">Node.js</li>
-                    <li class="skills">MongoDB</li>
-                    <li class="skills">React</li>
-                    <li class="skills">Redux</li>
-                    <li class="skills">React Native</li>
-                    <li class="skills">Angular</li>
-                </ul>
+    <!-- Middle -->
+    <div class="container middle">
+        <div class="row ">
+            <div class="col-sm events-screenshot-box">
+                <img src="img/events-screenshot.png" class="events-screenshot" alt="events screenshot">
             </div>
+            <div class="col-sm development-process-box">
+                <h2>Development Process</h2>
+                <span class="subtitle">1. Creating an Authorisation Server and setting up OAuth2</span>
+                <br>
+                <p>
 
-            <div class="col-sm-12 contact-box">
-                <div class="contact">
-                    <p id="find-me-on">Find me on:</p>
-                    <div class="social-media">
-                        <!-- LinkedIn logo -->
-                        <a href="https://www.linkedin.com/in/efpaulo/" target="_blank">
-                            <img id="linkedin-icon" src="img/linkedin_icon.svg" alt="Linkedin"></a>
-                        <!-- Github logo -->
-                        <a href="https://github.com/effpaulo/" target="_blank"> <img id="github-icon"
-                                src="img/github_icon.svg" alt="Github"></a>
-                    </div>
-                </div>
+                    The first thing to do was ensure that the user has access to the Google Calendar API. This was a
+                    complex
+                    process because involved on one hand the creation of a server to handling the authorisations
+                    requests
+                    and on another hand, the creation of a OAuth Consumer that actually contains the access required by
+                    Google to the API.
+
+                    As a Authorisation Server, was used the services of AWS Lambda to host serveless functions created
+                    with
+                    the authorisation requests. Through OAuth2 protocol, the application gain access to the API with its
+                    own
+                    OAuth Consumer.
+                    <br>
+                </p>
+                <span class="subtitle">2. Testing</span>
+                <br>
+                <p>
+                    To guarantee that every part would work properly, unit tests were setup with help of Jest, first
+                    with
+                    mock data then with the actual data loaded from Calendar API, followed by integration tests and user
+                    acceptance tests made with Puppeteer.
+
+                    This was the essencial topic in this project and for me, as a developer student, was a big step to
+                    be
+                    able to know how to prevent errors and write more structured code.
+
+                </p>
+                <span class="subtitle">3. Converting to a PWA (Progressive Web Application)</span>
+                <br>
+                <p>
+                    A web application with the advantages of a native application: the ability to be installed (on both
+                    mobile devices and computers) and the ability to work offline. Through Service Worker handle the
+                    requests and responses made between the application and the data stored in the browser’s cache,
+                    making
+                    possible the application load data even when there’s no internet connection. And thanks to the Web
+                    App
+                    Manifest (which defines how the app will be displayed to the user ) meet app can have a look and
+                    feel
+                    like a native application.
+
+                    Challenges
+                    The most challenging task was definitely set up authorisation/authentication for Google API: it is a
+                    complex logic with a lot of steps that took some time to understand but in the end was a great
+                    achievement and brought a lot of new knowledge.
+                </p>
             </div>
         </div>
     </div>
+
+
+
+
+
 
     <footer class="page-footer">
         <p>Website built and designed by Eduarda Cruz</p>
