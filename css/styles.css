@@ -243,6 +243,7 @@ span {
 .contact-box {
   margin-top: 4rem;
   text-align: center;
+  color: var(--color-3);
 }
 
 #find-me {
@@ -259,6 +260,11 @@ span {
   width: 50px;
   height: 50px;
   text-align: center;
+}
+
+#resume-icon {
+  width: 40px;
+  height: 40px;
 }
 
 /* Footer */
