@@ -306,7 +306,6 @@ span {
 .middle {
   width: 100%;
   margin-top: 1rem;
-
 }
 
 .events-screenshot-box {
@@ -325,7 +324,32 @@ span {
 .development-process-box {
   background-color: var(--color-1);
   padding: 1rem;
- margin-left: 1rem;
+  margin-left: 1rem;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+}
+
+/* End */
+
+.end {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.challenges-box {
+  width: 50%;
+  height: 10rem;
+  background-color: var(--color-1);
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.summary-box {
+  background-color: var(--color-1);
+  padding: 1rem;
+  margin-left: 1rem;
 }
 
 
