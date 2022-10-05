@@ -7,12 +7,15 @@
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="16x16" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&family=Krona+One&family=Lato:wght@300;400;700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -37,63 +40,52 @@
     <!-- Beginning -->
     <div class="container beginning">
         <div class="row ">
-            <div class="col-sm overview-box">
+            <div class="col-lg overview-box">
 
                 <h2>Overview</h2>
                 <p id="overview">
-
-                    Progressive web application (PWA) built with React that allows users to search for a city and get a
-                    list of events hosted in that city. The events are fetched from Google Calendar API using AWS
-                    Lambda as authorisation server for issuing OAuth2 authentication. It was developed following
-                    test-driven development (TDD) supported by Jest.
+                    Progressive web application (PWA) built with React that allows users to search for a city and get a
+                    list of events hosted in that city. The events are fetched from Google Calendar API using AWS
+                    Lambda as authorisation server for issuing OAuth2 authentication. It was developed following
+                    test-driven development (TDD) supported by Jest.
                     <br>
                     <br>
                     <span class="subtitle">Context</span>
                     <br>
-
-
                     This app was developed during the Full Stack Web Development course in Career Foundry to practice my
-                    skills.
-                    <br>
-                    <br>
-                    <span class="subtitle">Duration</span>
-
-                    <br>
-
-                    This project consisted in the whole 4th achievement of the course with the theme: Testing in the
-                    Development Proces
-
-
+                    skills and consisted in the whole 4th achievement with the theme: Testing in the
+                    Development Process.
                 </p>
-
             </div>
-            <div class="col-sm homepage-screenshot-box">
+            <div class="col-lg homepage-screenshot-box">
                 <img src="img/screenshot_meet-app.png" class="homepage-screenshot" alt="homepage screenshot">
             </div>
         </div>
     </div>
 
     <!-- Middle -->
-    <div class="container middle">
+    <!-- <div class="container middle">
         <div class="row">
-            <div class="col-sm events-screenshot-box">
-                <img src="img/events-screenshot.png" class="events-screenshot" alt="events screenshot">
-            </div>
-            <div class="col-sm development-process-box">
+
+
+        </div>
+    </div> -->
+
+    <!-- End -->
+    <div class="container end">
+        <div class="row">
+            <div class="col-lg development-process-box">
                 <h2>Development Process</h2>
                 <br>
                 <span class="subtitle">1. Creating an Authorisation Server and setting up OAuth2</span>
                 <br>
-                <br>
                 <p>
-
                     The first thing to do was ensure that the user has access to the Google Calendar API. This was a
                     complex
                     process because involved on one hand the creation of a server to handling the authorisations
                     requests
                     and on another hand, the creation of a OAuth Consumer that actually contains the access required by
                     Google to the API.
-
                     As a Authorisation Server, was used the services of AWS Lambda to host serveless functions created
                     with
                     the authorisation requests. Through OAuth2 protocol, the application gain access to the API with its
@@ -103,20 +95,16 @@
                 </p>
                 <span class="subtitle">2. Testing</span>
                 <br>
-                <br>
                 <p>
                     To guarantee that every part would work properly, unit tests were setup with help of Jest, first
                     with
                     mock data then with the actual data loaded from Calendar API, followed by integration tests and user
                     acceptance tests made with Puppeteer.
-
                     This was the essencial topic in this project and for me, as a developer student, was a big step to
                     be
                     able to know how to prevent errors and write more structured code.
-
                 </p>
                 <span class="subtitle">3. Converting to a PWA (Progressive Web Application)</span>
-                <br>
                 <br>
                 <p>
                     A web application with the advantages of a native application: the ability to be installed (on both
@@ -130,21 +118,16 @@
                     like a native application.
                 </p>
             </div>
-        </div>
-    </div>
-
-    <!-- End -->
-    <div class="container end">
-        <div class="row">
-            <div class="col-sm challenges-box">
+            <div class="col-sm-12 col-md-6 col-lg-6 events-screenshot-box">
+                <img src="img/events-screenshot.png" class="events-screenshot" alt="events screenshot">
+            </div>
+            <div class="col-sm col-lg-6 challenges-box">
                 <h2>Challenges</h2>
                 <p>
                     The most challenging task was definitely set up authorisation/authentication for Google API:
                     it is a complex logic with a lot of steps that took some time to understand but in the end
                     was a great achievement and brought a lot of new knowledge.
                 </p>
-            </div>
-            <div class="col-sm summary-box">
                 <h2>Summary</h2>
                 <p>
                     As the second React project, here the main focus was about testing: an essencial skill for
@@ -153,6 +136,7 @@
                     Integration) and CD (Continuous Delivery).
                 </p>
             </div>
+
         </div>
     </div>
 

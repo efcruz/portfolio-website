@@ -4,17 +4,18 @@
   --color-3: black;
   --color-4: white;
   --color-5: rgb(173, 173, 173);
-  --font-family-text: 'Anek Gurmukhi', sans-serif;
+  --font-family-text: 'Lato', sans-serif;
   --font-family-logo: 'Krona One', sans-serif;
-  --font-family-title: 'Anek Gurmukhi', sans-serif;
+  --font-family-title: 'Raleway', sans-serif;;
   --font-size-1: 30px;
   --font-size-2: 24px;
   --font-size-3: 20px;
   --font-size-4: 16px;
-  --font-size-5: 12px;
+  --font-size-5: 14px;
+  --font-size-6: 12px;
   --font-weight-1: 700;
   --font-weight-2: 400;
-
+  --font-weight-3: 300;
 }
 
  * {
@@ -37,17 +38,20 @@ body {
 }
 
 h1 {
+  font-family: var(--font-family-title);
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-1);
   color: var(--color-5);
 }
 
 h2 {
+  font-family: var(--font-family-title);
   font-size: var(--font-size-3);
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-1);
 }
 
 h3 {
+  font-family: var(--font-family-title);
   font-size: var(--font-size-3);
   font-weight: var(--font-weight-1);
 }
@@ -113,7 +117,7 @@ a:active {
 } 
 
 #bio {
-  font-weight: var(--font-weight-1);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-4);
   position: absolute;
   bottom: 0rem;
@@ -121,6 +125,7 @@ a:active {
 }
 
 #hello {
+  font-family: var(--font-family-title);
   font-weight: var(--font-weight-1);
   font-size: var(--font-size-2);
   color: var(--color-3);
@@ -220,6 +225,7 @@ span {
 
 .about-text {
   text-align: justify;
+  font-weight: var(--font-weight-3);
 }
 
 .contact-box {
@@ -247,7 +253,7 @@ span {
 }
 
 #find-me {
-  font-size: var(--font-size-5);
+  font-size: var(--font-size-6);
   text-align: center;
 }
 
@@ -271,7 +277,7 @@ span {
 
 .page-footer {
   margin: 1rem;
-  font-size: var(--font-size-5);
+  font-size: var(--font-size-6);
   color: var(--color-5);
   text-align: center;
 }
@@ -285,26 +291,30 @@ span {
 /* Beginning */
 
 .beginning {
-  width: 100%;
+  /* width: 100%; */
+  font-weight: var(--font-weight-3);
+  font-size: var(--font-size-4);
+  text-align: justify;
 }
 
 .overview-box {
-  width: 50%;
-  height: 19rem;
+  /* width: 50%; */
+  /* height: 19rem; */
   background-color: var(--color-1);
   padding: 1rem;
-  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .homepage-screenshot-box {
   align-content: right;
   padding: 0rem;
+  margin-bottom: 0rem;
 }
 
 .homepage-screenshot {
   float:right;
-  height: 19rem;
-  width: auto;
+  height: auto;
+  width: 100%;
 } 
 
 /* Middle */
@@ -312,29 +322,26 @@ span {
 .middle {
   width: 100%;
   margin-top: 1rem;
+  font-weight: var(--font-weight-3);
+  text-align: justify;
 }
-
-.events-screenshot-box {
-  padding: 0rem;
-  width: 50%;
-  
-}
-
-.events-screenshot {
-  float:left;
-  height: 39.9rem;
-  width: auto;
-}
-
 
 .development-process-box {
   background-color: var(--color-1);
   padding: 1rem;
-  margin-left: 1rem;
+  margin-bottom: 0rem;
 }
 
-.subtitle {
-  margin-bottom: 1rem;
+.events-screenshot-box {
+  padding: 0rem;
+  width: 100%;
+  margin-bottom: 0rem;
+}
+
+.events-screenshot {
+  float:left;
+  height: auto;
+  width: 100%;
 }
 
 /* End */
@@ -342,14 +349,14 @@ span {
 .end {
   width: 100%;
   margin-top: 1rem;
+  font-weight: var(--font-weight-3);
+  text-align: justify;
 }
 
 .challenges-box {
-  width: 50%;
-  height: 10rem;
   background-color: var(--color-1);
   padding: 1rem;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .summary-box {
@@ -389,6 +396,36 @@ span {
   #skills{
     text-align: center;
   }
+
+  .overview-box {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .homepage-screenshot-box {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .development-process-box {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .events-screenshot-box {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .challenges-box {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+ 
 }
 
 @media all and (min-width: 576px) and (max-width: 767px){
@@ -405,12 +442,36 @@ span {
     text-align: center;
   }
 
+  .development-process-box {
+    margin-bottom: 1rem;
+  }
+
+  .events-screenshot-box {
+    margin-bottom: 1rem;
+  }
+
+  .challenges-box {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1499px){
+  .development-process-box {
+    margin-bottom: 1rem;
+  }
+
 }
 
 @media all and (min-width: 1500px){
-  /*
-  h1 {
-    font-size: 22px;
+  .overview-box {
+    margin-right: 1rem;
   }
-  */
+
+  .homepage-screenshot-box {
+    margin-left: 1rem;
+  }
+
+  
 }
