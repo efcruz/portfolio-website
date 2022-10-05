@@ -293,28 +293,28 @@ span {
 .beginning {
   /* width: 100%; */
   font-weight: var(--font-weight-3);
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-5);
   text-align: justify;
 }
 
 .overview-box {
   /* width: 50%; */
-  /* height: 19rem; */
+  
   background-color: var(--color-1);
   padding: 1rem;
   margin-bottom: 1rem;
 }
 
 .homepage-screenshot-box {
-  align-content: right;
+  float:right;
   padding: 0rem;
-  margin-bottom: 0rem;
 }
 
 .homepage-screenshot {
   float:right;
-  height: auto;
   width: 100%;
+  height: auto;
+  
 } 
 
 /* Middle */
@@ -322,6 +322,7 @@ span {
 .middle {
   width: 100%;
   margin-top: 1rem;
+  font-size: var(--font-size-5);
   font-weight: var(--font-weight-3);
   text-align: justify;
 }
@@ -349,6 +350,7 @@ span {
 .end {
   width: 100%;
   margin-top: 1rem;
+  font-size: var(--font-size-5);
   font-weight: var(--font-weight-3);
   text-align: justify;
 }
@@ -457,21 +459,51 @@ span {
 
 }
 
-@media all and (min-width: 768px) and (max-width: 1499px){
+@media all and (min-width: 768px) and (max-width: 991px){
+
+  .overview-box {
+    margin-right: 0rem;
+  }
   .development-process-box {
     margin-bottom: 1rem;
+    margin-right: 0rem;
   }
 
 }
 
-@media all and (min-width: 1500px){
+@media all and (min-width: 992px)  {
   .overview-box {
     margin-right: 1rem;
+    margin-right: 1rem;
+    height: 18.3rem;
+    margin-bottom: 0rem;
   }
 
-  .homepage-screenshot-box {
-    margin-left: 1rem;
+  .development-process-box {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    height: 34rem;
   }
 
+  .challenges-box {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
   
 }
+
+@media all and (min-width: 1200px) {
+  .overview-box {
+    height: 21.9rem;
+    
+  }
+
+  .development-process-box {
+    height: 40.4rem;
+  }
+
+}
+
+
+
+  
